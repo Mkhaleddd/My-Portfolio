@@ -78,19 +78,9 @@ ul {
   margin-top: 4.5em;
   padding:1em;
 }
-main{
-   height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 
 main section{
-  margin-top: 8em;
   margin-bottom: 12em;
-  height: 85vh;
 }
 :hover:not(h1,h2){
   color:white;
@@ -358,13 +348,11 @@ transform: rotate(-10deg);
 
 /* ///////////////                     SKILLS                    /////////////////////*/
 .carousel-pr {
-  width: 80%;
-  top: 4rem;
   position: relative;
   white-space: nowrap;
   display: flex;
   justify-content: space-evenly;
-  animation: scroll-horizontal 16s linear infinite;
+  animation: scroll-horizontal 20s linear infinite;
 }
 @-webkit-keyframes scroll-horizontal {
   0% {
@@ -399,13 +387,12 @@ section.skills{
 	position: relative;
   overflow-y: hidden;
 	overflow-x: hidden;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 section .skills ::-webkit-scrollbar{
   width: 0;
 }
 .skills h3{
-  width: 50ch;
+  width: 65ch;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1033,7 +1020,6 @@ margin-bottom: 16rem;
 }
 .skills{
   border-radius: 0;
-  border-color: transparent;
 }
 .skills::after{
   display: none;
