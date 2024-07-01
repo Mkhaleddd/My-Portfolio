@@ -340,7 +340,8 @@ header .flex{
    background-clip:padding-box,text;
    background-repeat:no-repeat;
    animation:    b 0.75s step-end infinite,      t calc(var(--n)*.3s) steps(var(--n)) forwards;
- }
+   -webkit-animation:    b 0.75s step-end infinite,      t calc(var(--n)*.3s) steps(var(--n)) forwards;
+}
 
 
 /* ///////////////                     SKILLS                    /////////////////////*/
@@ -500,14 +501,18 @@ padding: 1rem;
 form > *:not(button){
   margin-top: 1rem;
   border-radius: 35px;
+  -webkit-border-radius:35px;
+  -moz-border-radius:35px;
+  -ms-border-radius:35px;
+  -o-border-radius:35px;
   padding: 1rem;
   border: none;
   outline: none;
   border-bottom: 2px solid #ddd;
+  
 }
-textarea{
+form textarea{
   padding: 2.5rem;
-  border-radius: 15px;
 }
 button[type=submit]{
   width: 25%;
@@ -515,7 +520,6 @@ button[type=submit]{
   margin-top: 2em;
   margin-bottom: 1.5rem;
   border-radius: 25px;
-  font-size: 1.15rem;
   align-self: center;
   background-color: var(--accent);
   -webkit-border-radius: 25px;
@@ -975,13 +979,14 @@ ul li:hover:nth-child(4) a:after{
 }
 @keyframes b{
   50% {background-position:0 -100%,0 0}
-}
+} 
 /* ////////////////////////////    MEDIA QUERIES ////////////////////////////////    */
 @media(prefers-reduced-motion){
   html{
    scroll-behavior: auto;
   }
-  .carousel-pr {
+ .carousel-pr {
+    padding: 1.5em;
     display: grid;
     grid-template-columns: auto auto;
     animation: none;
@@ -1022,7 +1027,11 @@ main section{
  .about-wrapper{
 margin-bottom: 16rem;
 }
+.wrapper{
+  width: 65%;
 
+}
+  
 .text{
   width: 40ch;
   padding-left: 1rem;
@@ -1048,15 +1057,14 @@ margin-bottom: 16rem;
   padding: 1.5rem;
   margin-left:-15rem;
 
-
-
 }
 
 .carousel-pr{
-  margin-top: auto;
+  width: 100%;
+  margin-right: auto;
    margin-left: auto;
-flex-direction: column;
-justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .carousel-pr>*{
   margin-bottom: 2rem;
@@ -1105,9 +1113,5 @@ h3#contact{
   ul >li{
     padding-left: 2rem;
   }
-.wrapper{
-  width: 65%;
 
-}
-  
 }
