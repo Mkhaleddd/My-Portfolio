@@ -34,7 +34,32 @@ body::-webkit-scrollbar {
   -moz-osx-font-smoothing: grayscale;
 
 } 
+.wrapper{
+  width: 50%;
+  margin: 0 auto;
+}
+.type,.type:hover {
+  font-family: monospace;
+  --n:663;
+  color:#0000;
+  background:
+    linear-gradient(-90deg,#8d1c25 5px,#0000 0) 10px 0,
+    linear-gradient(#8d1c25 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 100%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+   b 0.75s step-end infinite,   
+   t calc(var(--n)*.3s) steps(var(--n)) forwards;
+}
 
+@keyframes t{
+  from {background-size:0 200%}
+}
+@keyframes b{
+  50% {background-position:0 -100%,0 0}
+}
 #root {
   max-width: 100%;
   margin: 0 auto;
@@ -137,12 +162,7 @@ button::-moz-focus-inner{
 .text{
   text-align: justify;
   line-height: 1.5;
-  width: 65ch;
-  font-style: oblique;
-  width: 65ch;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 2em;
+
 }
 
 
@@ -332,19 +352,7 @@ header .flex{
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
 /* ///////////////////////                     ABOUT              ///////////////////////// */
-.rotate{
-width: 20%;
-padding: 1.5em 1em 1.5em 1em ;
-margin-top: 2em;
-border-top: 3px solid var(--accent);
-border-left: 3px solid var(--accent);
-border-radius:10px;
-box-shadow: 0px 30px 40px -20px var(--grayishBlue);
-transform: rotate(-10deg);
-}
-.rotate:hover{
-  transform: rotate(0);
-}
+
 
 /* ///////////////                     SKILLS                    /////////////////////*/
 .carousel-pr {
@@ -498,10 +506,13 @@ margin-right: auto;
 padding: 1rem;
 }
 
-form > *{
+form > *:not(button){
   margin-top: 1rem;
   border-radius: 35px;
   padding: 1rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ddd;
 }
 textarea{
   padding: 2.5rem;
@@ -512,9 +523,14 @@ button[type=submit]{
   padding: 0.85em;
   margin-top: 2em;
   margin-bottom: 1.5rem;
+  border-radius: 25px;
   font-size: 1.15rem;
   align-self: center;
   background-color: var(--accent);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
 }
 button[type=submit]:hover{
   background: var(--background);
@@ -1025,14 +1041,14 @@ margin-bottom: 16rem;
   display: none;
 }
 .skills h3{
-  padding: 1rem;
-  position: relative;
-  top: 6rem;
-  width: 90%;
+  padding: 1.5rem;
+  width: 100%;
 
 }
 
 .carousel-pr{
+  margin-top: 2rem;
+   margin-left: 2rem;
 flex-direction: column;
 justify-content: space-between;
 }
@@ -1083,6 +1099,9 @@ h3#contact{
   ul >li{
     padding-left: 2rem;
   }
+.wrapper{
+  width: 65%;
 
+}
   
 }

@@ -28,7 +28,7 @@ function App() {
               </div>
               </div>
               <div className="flex">
-          <a className='button-background-move' download href='' >
+          <a className='button-background-move' download href='https://www.canva.com/design/DAGJZfvwspY/2tMv3plrqox48REdrmOZzw/view?utm_content=DAGJZfvwspY&utm_campaign=designshare&utm_medium=link&utm_source=editor' >
             Download CV
           </a>
           <a className='button-cover' role='button' href='#contacts' >

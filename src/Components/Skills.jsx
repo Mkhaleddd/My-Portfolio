@@ -6,8 +6,7 @@ const Skills = () => {
   return (
     <>
      <section aria-labelledby='skills' id='skills' className='skills'>
-      <h3 title='skills'>I have acquired the following skills with addition 
-        to resposive Web Desgin,SEO optimization and Web Accessibilty</h3>
+      <h3 title='skills'>Skills Acquired</h3>
        <ul className='scroll-con carousel-pr ' >
         <li className="flip-animate" > 
           <span data-hover="Advanvced">
