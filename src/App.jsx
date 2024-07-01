@@ -1,15 +1,12 @@
-import { useState } from 'react'
-import Skills from './Components/Skills'
-import About from './Components/About'
-import Projects from "./Components/Projects"
-import Contact from "./Components/Contact"
+import { lazy} from 'react'
 import Nav from './Components/Nav'
-import Footer from './Components/Footer'
-
-import './App.css'
+const LazyAbout=lazy(()=>import('./Components/About'))
+const LazySkills=lazy(()=>import('./Components/Skills'))
+const LazyProjects=lazy(()=>import('./Components/Projects'))
+const LazyContact=lazy(()=>import('./Components/Contact'))
+const LazyFooter=lazy(()=>import('./Components/Footer'))
 
 function App() {
-
   return (
     <>
     <header>     
@@ -40,12 +37,12 @@ function App() {
   
 
     <main>
-         <About />
-         <Skills />
-         <Projects />
-         <Contact />
+         <LazyAbout />
+         <LazySkills />
+         <LazyProjects />
+         <LazyContact/>
     </main>
-  <Footer />
+  <LazyFooter />
    <Nav />
     </>
   )

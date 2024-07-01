@@ -8,19 +8,19 @@ const Footer = () => {
     <footer>
 <ul>
   <li>
-    <a href="https://www.linkedin.com/feed/" target='_blank'>
+    <a href="https://www.linkedin.com/feed/" target='_blank' aria-label='Linkedin'>
       <i className="fa fa-Linkedin" aria-hidden="true"></i>
       <span>Linked<FaLinkedin /></span>
     </a>
   </li>
   <li>
-    <a href="https://github.com/Mkhaleddd/" target="_blank">
+    <a href="https://github.com/Mkhaleddd/" target="_blank" aria-label='Github'>
       <i className="fa fa-Github" aria-hidden="true"></i>
       <span> <FaGithub /> Github</span>
     </a>
   </li>
   <li>
-    <a href="https://myaccount.google.com/">
+    <a href="https://myaccount.google.com/" aria-label='Google'>
       <i className="fa fa-google-plus" aria-hidden="true"></i>
       <span><FaGoogle />oogle</span>
     </a>

@@ -8,10 +8,10 @@ const Nav = () => {
   return (
     <nav className="tabs" role='navigation'>
     <div className="selector"></div>
-    <a href="#about" ><CiUser /></a>
-    <a href="#skills"><LuCode2 /></a>
-    <a href="#projects"><GrProjects /></a>
-    <a href="#contacts"><MdOutlineModeComment /></a>
+    <a href="#about"  aria-label='About'><CiUser /></a>
+    <a href="#skills" aria-label='Skills'><LuCode2 /></a>
+    <a href="#projects" aria-label='Projects'><GrProjects /></a>
+    <a href="#contacts" aria-label='Contacts'><MdOutlineModeComment /></a>
   </nav>
   )
 }
