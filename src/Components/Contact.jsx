@@ -1,6 +1,6 @@
 
 import { useRef } from 'react';
-import {emailjs} from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import {IoIosSend} from "react-icons/io";
 
 const Contact = () => {
