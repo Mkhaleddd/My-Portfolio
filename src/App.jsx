@@ -1,6 +1,6 @@
 import { lazy,Suspense} from 'react'
 import Nav from './Components/Nav'
-import {CircleLoader}from 'react-spinners'
+import CircleLoader from 'react-spinners'
 const LazyAbout=lazy(()=>import('./Components/About'))
 const LazySkills=lazy(()=>import('./Components/Skills'))
 const LazyProjects=lazy(()=>import('./Components/Projects'))

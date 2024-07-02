@@ -1,12 +1,11 @@
 
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { IoIosSend } from "react-icons/io";
+import IoIosSend from "react-icons/io";
 
 const Contact = () => {
   const form = useRef();
-  const name=useRef()
-const [disable,setDisable]=React.useState(false)
+
   const sendEmail = (e) => {
     e.preventDefault();
       emailjs
@@ -16,7 +15,6 @@ const [disable,setDisable]=React.useState(false)
       .then(
         (res) => {
           console.log("success",res.text);
-          setDisable(prev=>!prev)
         },
         (error) => {
           console.log('FAILED...', error.text);

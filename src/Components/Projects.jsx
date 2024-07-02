@@ -1,5 +1,5 @@
 import React from 'react';
-import { TwicImg } from "@twicpics/components/react";
+import TwicImg  from "@twicpics/components/react";
 
 const Projects = () => {
   return (

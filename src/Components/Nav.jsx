@@ -1,8 +1,8 @@
 import React from 'react'
-import { CiUser } from "react-icons/ci";
-import { LuCode2 } from "react-icons/lu";
-import { GrProjects } from "react-icons/gr";
-import { MdOutlineModeComment } from "react-icons/md";
+import  CiUser  from "react-icons/ci";
+import  LuCode2  from "react-icons/lu";
+import  GrProjects  from "react-icons/gr";
+import  MdOutlineModeComment  from "react-icons/md";
 
 const Nav = () => {
   return (
