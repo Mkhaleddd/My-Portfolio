@@ -5,6 +5,7 @@ import { IoIosSend } from "react-icons/io";
 
 const Contact = () => {
   const form = useRef();
+  const name=useRef()
 const [disable,setDisable]=React.useState(false)
   const sendEmail = (e) => {
     e.preventDefault();
@@ -30,9 +31,9 @@ const [disable,setDisable]=React.useState(false)
             <h3 id='contact'>Got an idea on your mind,send it!</h3>
               <form ref={form} onSubmit={sendEmail} className='row-flex'>
                    
-                    <input type="text" name="name" placeholder='Name'  />
-                    <input type="email" name="email"  placeholder='Email'/>
-                    <textarea name="message" placeholder='Your Message' />
+                    <input type="text" name="name" placeholder='Name' required aria-describedby='uidnote' />
+                    <input type="email" name="email"  placeholder='Email' required/>
+                    <textarea name="message" placeholder='Your Message' required />
                    <button type="submit" >Send <IoIosSend /></button>
             </form>
             </section>

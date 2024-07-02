@@ -1,5 +1,6 @@
-import { lazy} from 'react'
+import { lazy,Suspense} from 'react'
 import Nav from './Components/Nav'
+import {CircleLoader}from 'react-spinners'
 const LazyAbout=lazy(()=>import('./Components/About'))
 const LazySkills=lazy(()=>import('./Components/Skills'))
 const LazyProjects=lazy(()=>import('./Components/Projects'))
@@ -37,10 +38,22 @@ function App() {
   
 
     <main>
-         <LazyAbout />
-         <LazySkills />
-         <LazyProjects />
-         <LazyContact/>
+      <Suspense fallback={<CircleLoader color="#8d1c25" />}>
+        <LazyAbout />
+      </Suspense >
+      <Suspense fallback={<CircleLoader color="#8d1c25" />}>
+        <LazySkills />
+        </Suspense >
+        <Suspense fallback={<CircleLoader color="#8d1c25" />}>
+           <LazyProjects />
+        </Suspense >
+        <Suspense fallback={<CircleLoader color="#8d1c25" />}>
+           <LazyContact/>
+        </Suspense >
+         
+         
+         
+        
     </main>
   <LazyFooter />
    <Nav />
