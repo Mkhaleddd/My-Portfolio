@@ -1,11 +1,10 @@
 
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import IoIosSend from "react-icons/io";
+import {emailjs}from '@emailjs/browser';
+import {IoIosSend} from "react-icons/io";
 
 const Contact = () => {
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
       emailjs
