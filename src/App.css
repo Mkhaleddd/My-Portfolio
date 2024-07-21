@@ -35,6 +35,9 @@ ul li a:after,ul li a:before{content:'';position:absolute}.section#projects{heig
         width: 90%;
         gap: 0.75rem;
     }
+    .skills::before{
+        display: none;
+    }
     .grid img{
         width: 100px;
         height: 100px;
