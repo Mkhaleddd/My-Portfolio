@@ -1,5 +1,6 @@
 import { lazy,Suspense} from 'react'
 import Nav from './Components/Nav'
+import ThemeToggle from './Components/ThemeToggle'
 import {CircleLoader} from 'react-spinners'
 const LazyAbout=lazy(()=>import('./Components/About'))
 const LazySkills=lazy(()=>import('./Components/Skills'))
@@ -10,6 +11,7 @@ const LazyFooter=lazy(()=>import('./Components/Footer'))
 function App() {
   return (
     <>
+     <ThemeToggle />
     <header>     
             <div className="container">
                 <div className="box">
