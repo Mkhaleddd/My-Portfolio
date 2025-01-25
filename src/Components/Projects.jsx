@@ -53,7 +53,7 @@ const projects = [
   },
   {
     title: "File Explorer",
-    description: "A file manager app with CRUD operations for files and folders, using recursion for hierarchy handling, a custom hook for state management, and DFS for efficient search.",
+    description: "A file manager app with CRUD operations for files and folders, using recursion for hierarchy handling",
     image: fileImg,
     category: "React",
     website: "https://mkhaleddd.github.io/file-explorer/",
