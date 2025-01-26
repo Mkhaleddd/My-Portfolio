@@ -28,7 +28,7 @@ function App() {
               </div>
               </div>
               <div className="flex">
-          <a className='button-background-move' download href='https://drive.google.com/file/d/1kQPh-e-zJO9ST0Ebjpsp1weDbamKQ7xj/view?usp=drivesdk' >
+          <a className='button-background-move' download href='https://drive.google.com/file/d/13WjAtOUiamtHbMfxrO-Aaxu53apwv0-d/view' >
             Download CV
           </a>
           <a className='button-cover' role='button' href='#contacts' >
